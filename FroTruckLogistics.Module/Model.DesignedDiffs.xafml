@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="FroTruckLogistics" Logo="Logo">
+  <BOModel>
+    <Class Name="FroTruckLogistics.Module.BO.expense_category" DefaultDetailViewImage="BringToFront_16x16" DefaultListViewImage="BringToFront_16x16" ImageName="BringToFront_16x16" />
+    <Class Name="FroTruckLogistics.Module.BO.expense_type" DefaultDetailViewImage="BOSale_16x16" DefaultListViewImage="BOSale_16x16" ImageName="BOSale_16x16" />
+    <Class Name="FroTruckLogistics.Module.BO.expense_type_category" DefaultDetailViewImage="InitializeCorrelation" DefaultListViewImage="InitializeCorrelation" ImageName="InitializeCorrelation" />
+    <Class Name="FroTruckLogistics.Module.BO.location" DefaultDetailViewImage="Hyperlink_16x16" DefaultListViewImage="Hyperlink_16x16" ImageName="Hyperlink_16x16" />
+    <Class Name="FroTruckLogistics.Module.BO.payment_type" DefaultDetailViewImage="BONote_16x16" DefaultListViewImage="BONote_16x16" ImageName="BONote_16x16" />
+    <Class Name="FroTruckLogistics.Module.BO.truck" DefaultDetailViewImage="truck" DefaultListViewImage="truck" ImageName="truck" />
+    <Class Name="FroTruckLogistics.Module.BO.truck_expense" IsCloneable="True" DefaultDetailViewImage="BO_Invoice" DefaultListViewImage="BO_Invoice" ImageName="BO_Invoice">
+      <OwnMembers>
+        <Member Name="amount" ImmediatePostData="True" />
+        <Member Name="expense_category_id" DataSourceCriteria="[expense_type_categorys][[expense_type_id.expense_type_id] = '@This.expense_type_id.expense_type_id']" />
+        <Member Name="expense_type_id" ImmediatePostData="True" />
+        <Member Name="location_id" AllowEdit="False" />
+        <Member Name="payment_type_id" ImmediatePostData="True" />
+        <Member Name="total_amount" AllowEdit="False" />
+        <Member Name="truck_id" ImmediatePostData="True" DataSourceCriteria="[location_id.user_locations][[user_id.Oid] = CurrentUserId()]" />
+        <Member Name="vat" ImmediatePostData="True" />
+      </OwnMembers>
+    </Class>
+    <Class Name="FroTruckLogistics.Module.BO.truck_km" IsCloneable="True" DefaultDetailViewImage="GaugeStyleThreeForthCircular_16x16" DefaultListViewImage="GaugeStyleThreeForthCircular_16x16" ImageName="GaugeStyleThreeForthCircular_16x16">
+      <OwnMembers>
+        <Member Name="truck_id" DataSourceCriteria="[location_id.user_locations][[user_id.Oid] = CurrentUserId()]" />
+      </OwnMembers>
+    </Class>
+    <Class Name="FroTruckLogistics.Module.BO.user_location" DefaultDetailViewImage="BO_MyDetails" DefaultListViewImage="BO_MyDetails" ImageName="BO_MyDetails" />
+    <Class Name="FroTruckLogistics.Module.BO.vendor" DefaultDetailViewImage="BO_Contact" DefaultListViewImage="BO_Contact" ImageName="BO_Contact" />
+  </BOModel>
+  <NavigationItems DefaultLeafImageName="BO_Document" StartupNavigationItem="" DefaultParentImageName="Action_PopupWindowShowAction">
+    <Items>
+      <Item Id="Default" Caption="Security">
+        <Items>
+          <Item Id="Event_ListView" Visible="False" />
+        </Items>
+      </Item>
+      <Item Id="State Machine" Visible="False" />
+    </Items>
+  </NavigationItems>
+  <Options DataAccessMode="Server">
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="20.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="20.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="20.1.4.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="expense_category_DetailView">
+      <Items>
+        <PropertyEditor Id="expense_type_categorys" Removed="True" />
+        <PropertyEditor Id="truck_expenses" Removed="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="5.0666666666666664">
+            <LayoutGroup Id="expense_category" RelativeSize="100">
+              <LayoutItem Id="expense_category_name" RelativeSize="100" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="94.933333333333337">
+            <LayoutGroup Id="AuditTrail" RelativeSize="100">
+              <LayoutItem Id="AuditTrail" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="truck_expenses" Index="1" RelativeSize="100" Removed="True">
+              <LayoutItem Id="truck_expenses" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="expense_type_categorys" Removed="True" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="expense_type_category_ListView">
+      <Columns>
+        <ColumnInfo Id="expense_type_id" Width="101" />
+        <ColumnInfo Id="expense_category_id" Width="129" />
+      </Columns>
+    </ListView>
+    <DetailView Id="expense_type_DetailView">
+      <Items>
+        <PropertyEditor Id="expense_type_categorys" Removed="True" />
+        <PropertyEditor Id="truck_expenses" Removed="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="5.0666666666666664">
+            <LayoutGroup Id="expense_type" RelativeSize="100">
+              <LayoutItem Id="expense_type_name" RelativeSize="100" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="94.933333333333337">
+            <LayoutGroup Id="AuditTrail" RelativeSize="100">
+              <LayoutItem Id="AuditTrail" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="truck_expenses" Index="1" RelativeSize="100" Removed="True">
+              <LayoutItem Id="truck_expenses" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="expense_type_categorys" Removed="True" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="location_DetailView">
+      <Items>
+        <PropertyEditor Id="truck_expenses" Removed="True" />
+        <PropertyEditor Id="trucks" Removed="True" />
+        <PropertyEditor Id="user_locations" Removed="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="5.0666666666666664">
+            <LayoutGroup Id="location" RelativeSize="100">
+              <LayoutItem Id="location_name" RelativeSize="100" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="94.933333333333337">
+            <LayoutGroup Id="AuditTrail" RelativeSize="100">
+              <LayoutItem Id="AuditTrail" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="truck_expenses" Index="1" RelativeSize="100" Removed="True">
+              <LayoutItem Id="truck_expenses" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="user_locations" Index="1" RelativeSize="100" Removed="True">
+              <LayoutItem Id="user_locations" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="trucks" Removed="True" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="payment_type_DetailView">
+      <Items>
+        <PropertyEditor Id="truck_expenses" Removed="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="5.0666666666666664">
+            <LayoutGroup Id="payment_type" RelativeSize="100">
+              <LayoutItem Id="payment_type_name" RelativeSize="100" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="94.933333333333337">
+            <LayoutGroup Id="AuditTrail" RelativeSize="100">
+              <LayoutItem Id="AuditTrail" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="truck_expenses" Removed="True" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="truck_DetailView">
+      <Items>
+        <PropertyEditor Id="truck_expenses" Removed="True" />
+        <PropertyEditor Id="truck_kms" Removed="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="16.933333333333334">
+            <LayoutGroup Id="truck" RelativeSize="100">
+              <LayoutGroup Id="truck_col1" RelativeSize="50">
+                <LayoutItem Id="plate" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="equipment_number" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="location_id" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+              <LayoutGroup Id="truck_col2" RelativeSize="50">
+                <LayoutItem Id="truck_type" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="truck_model" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="truck_box" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="83.066666666666663">
+            <LayoutGroup Id="AuditTrail" RelativeSize="100">
+              <LayoutItem Id="AuditTrail" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="truck_kms" Index="1" RelativeSize="100" Removed="True">
+              <LayoutItem Id="truck_kms" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="truck_expenses" Removed="True" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="truck_expense_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="26.235294117647058">
+            <LayoutGroup Id="truck_expense" Caption="Truck Expense" RelativeSize="100">
+              <LayoutGroup Id="truck_expense_col1" RelativeSize="49.957081545064376">
+                <LayoutItem Id="trk_exp_date" RelativeSize="17.391304347826086" />
+                <LayoutItem Id="truck_id" RelativeSize="13.043478260869565" />
+                <LayoutItem Id="expense_type_id" RelativeSize="13.043478260869565" Index="2" />
+                <LayoutItem Id="expense_category_id" RelativeSize="13.043478260869565" Index="3" />
+                <LayoutItem Id="amount" ViewItem="amount" Index="4" RelativeSize="13.043478260869565" IsNewNode="True" />
+                <LayoutItem Id="vat" ViewItem="vat" Index="5" RelativeSize="13.043478260869565" IsNewNode="True" />
+                <LayoutItem Id="comments" ViewItem="comments" Index="6" RelativeSize="17.391304347826086" IsNewNode="True" />
+                <LayoutItem Id="payment_type_id" RelativeSize="15.384615384615385" Index="7" Removed="True" />
+                <LayoutItem Id="location_id" RelativeSize="13.043478260869565" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="truck_expense_col2" RelativeSize="50.042918454935624">
+                <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="65.760869565217391" Caption="Invoice info" IsNewNode="True">
+                  <LayoutItem Id="payment_type_id" ViewItem="payment_type_id" Index="0" RelativeSize="36.363636363636367" IsNewNode="True" />
+                  <LayoutItem Id="vendor_id" ViewItem="vendor_id" Index="1" RelativeSize="27.272727272727273" IsNewNode="True" />
+                  <LayoutItem Id="invoice_number" ViewItem="invoice_number" Index="2" RelativeSize="36.363636363636367" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="comments" RelativeSize="11.940298507462687" Index="1" Removed="True" />
+                <LayoutItem Id="location_id" ViewItem="location_id" Index="1" RelativeSize="13.043478260869565" IsNewNode="True" />
+                <LayoutItem Id="vendor_id" RelativeSize="15" Index="1" Removed="True" />
+                <LayoutItem Id="invoice_number" RelativeSize="15" Index="2" Removed="True" />
+                <LayoutItem Id="total_amount" RelativeSize="21.195652173913043" Index="2" />
+                <LayoutItem Id="vat" RelativeSize="13.043478260869565" Index="2" Removed="True" />
+                <LayoutItem Id="amount" RelativeSize="15" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="AuditTrail_Group" Direction="Vertical" RelativeSize="73.764705882352942">
+            <LayoutItem Id="AuditTrail" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="truck_expense_ListView">
+      <Columns>
+        <ColumnInfo Id="comments" Index="-1" />
+        <ColumnInfo Id="truck_id" Width="56" SortIndex="-1" SortOrder="None" />
+        <ColumnInfo Id="trk_exp_date" Width="59" />
+        <ColumnInfo Id="location_id" Width="69" />
+        <ColumnInfo Id="expense_type_id" Width="101" />
+        <ColumnInfo Id="expense_category_id" Width="129" />
+        <ColumnInfo Id="payment_type_id" Width="102" />
+        <ColumnInfo Id="vendor_id" Width="66" />
+        <ColumnInfo Id="invoice_number" Width="95" />
+        <ColumnInfo Id="amount" Width="57" />
+        <ColumnInfo Id="vat" Width="39" />
+        <ColumnInfo Id="total_amount" Width="84" />
+      </Columns>
+    </ListView>
+    <DetailView Id="truck_km_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="10.117647058823529">
+            <LayoutGroup Id="truck_km" RelativeSize="100">
+              <LayoutItem Id="truck_id" RelativeSize="37.2093023255814" />
+              <LayoutItem Id="truck_km_date" Index="1" RelativeSize="27.906976744186046" />
+              <LayoutItem Id="km_amount" Index="2" RelativeSize="34.883720930232556" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="AuditTrail_Group" Direction="Vertical" RelativeSize="89.882352941176464">
+            <LayoutItem Id="AuditTrail" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="truck_km_ListView" IsGroupPanelVisible="True" AutoExpandAllGroups="True">
+      <Columns>
+        <ColumnInfo Id="truck_km_date" Index="0" Width="59" SortIndex="0" SortOrder="Descending" />
+        <ColumnInfo Id="truck_id" Index="1" Width="56" SortIndex="-1" SortOrder="None" />
+        <ColumnInfo Id="km_amount" Index="2" Width="73" />
+      </Columns>
+    </ListView>
+    <ListView Id="truck_ListView">
+      <Columns>
+        <ColumnInfo Id="plate" Width="57" />
+        <ColumnInfo Id="location_id" Width="69" Index="1" />
+        <ColumnInfo Id="equipment_number" Width="110" Index="2" />
+        <ColumnInfo Id="truck_type" Width="73" />
+        <ColumnInfo Id="truck_model" Width="77" />
+        <ColumnInfo Id="truck_box" Width="67" />
+      </Columns>
+    </ListView>
+    <ListView Id="user_location_ListView">
+      <Columns>
+        <ColumnInfo Id="user_id" Width="55" />
+        <ColumnInfo Id="location_id" Width="69" />
+      </Columns>
+    </ListView>
+    <DetailView Id="vendor_DetailView">
+      <Items>
+        <PropertyEditor Id="truck_expenses" Removed="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="8.2666666666666675">
+            <LayoutGroup Id="vendor" RelativeSize="100">
+              <LayoutItem Id="vendor_id" RelativeSize="51.612903225806448" />
+              <LayoutItem Id="vendor_name" RelativeSize="48.387096774193552" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="91.733333333333334">
+            <LayoutGroup Id="AuditTrail" RelativeSize="100">
+              <LayoutItem Id="AuditTrail" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="truck_expenses" Removed="True" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9c51803f-4594-40d2-8495-e57a614c5731" namespace="FroTruckLogistics.Module.BO" dataBaseShemaInfo="H4sIAAAAAAAEAO0da3Mbt/F7Z/IfNPqUzAQm3o8O7TSy4lST1vXESaffNHgs5BtTR5UPWe6vL448UjySEo/kkSfZ1gfZh8MtdheLfWEBdX+6u+6d3MJgmPXzl6fkBT796dV3f+me2SG8H/UH9gou8tg/Sb3y4V/vhtnL0w+j0c1fO51Pnz69+MRe9AdXHYox6fznn/947z/AtUVZPhzZ3MPp/Kuw+avTNOrJSfcP63owLIacPM9aFhpmTSdv7TW8PIW7G8iHcOntCK76g8+n826p47tBdm0Hn3+Dz2Xvd79drnxwcjH8M8/+O06vR4MxLAJIIF73e+PrfFhpTM3D0SDLr14tA7vMQrdTvquA6azC6Xbu0VtsXjdi9/xs2nwy/eePzzcJ3Yt8xOjpA4xIqBSkJeAlXenhIkA+ykYLLW/HvV7BzZen0faGqen8rIA9BZnlo9OTTg1E3k8ofhCTPDWfnrzP/pdeClwdI7+1A//BDr4X+IfqYGt5dpEHuIMV5kyad53jB2d5+3lej3XRWuJYoW+VmO6b/gCyqzzN2nCBGd3OROTvn3/JJ88FLd1O+TB/eZ4Ni4Y/b0LC9tVkXtP4lcZ531/HWbgIryRjSmmPkTCgEBeYIx2VQ1LaIIiCYATpdsrO849LSiuL88Hm9KKYn+nL9QxdeF/57jFqt6V4kWodAmBuJdLGyUR1EMgoG5G0BgN4wFTbFaoXprgRwovFcXzS04xiTV1AjKdfHBRFxkeLvFEseKd50Lg26etaS5HdQZOPkm6oq8VPpr2bUOEFoCegvks0WlbdEyzaUtt1JnULnf3YxD5XfS1ijEbhtHyLRZs0FyBHI0OMem9I8NYSfxB9PWfmsRWWwJE6Li0KUkfECfbICW1RxBGkiN5KVl9h7UJ0O3raKGmFtQpRZh3iHmukPceIKaMF5QSUVS3q6e3d7upXjSnuJ+SAL+NzNFX+uD1pDmSFtkfB7moLsvxuvcBcjvPsSIbhsM7/Y1HLFktkW2qPGb8sU3v/qiT5zQMkrwnf7hfqH9N18ljYvxVbduVIRc1NkEr/NjloPejFxNwzdn+WTz2vB9m97JtvxepdHLG92LxpwD1Z3O2sk/aD+35YY0KV4siYQFEK3zwyThtkceRKRqecXY1aG/P9Wg3YgROtDEREVeENGUKRtQEjzAy2GDsugB/UCWyDaGcEBMojSm5u8nyVEMhplYi2LhBFmLfcHTxL0QbhhqVAJsqABPEKcUjxjWNGIuqwkkwq7Xx9wpvxfXv9xJGsn290dwdwVXTbx7+djdWiS7uAQksJiTkGR09G1JnBGsZv0yw+1wyEFsJQ5QhS2mrENZVIWwpIiRSWC6KiMauLcx8rVGHk0bMPInjpMUcMGKBkhZK5JRGQBsujkwakrh+Gb0twO5kHJinF1mOkvZCI06iRw8QjwjnVwKWXih1Z+97Yz9dJ6dTLEFc676OHFwG1qIuX0GhJH1ewOLpOrj+nNTRznXl9rto5RBM8YIWYcLTID7u0jClFKkYqpaEOaGxUO68w89jqSnFhRbJASOOYnEWeiLXKeGSjByF0VJqsUrynhl5ZDMcnmzIw1nKNrDQE8eQvJ4qpRulJKON8cL5+RNSMlh5+HobMXg3s9XCjkr6cdb68fE3PsDiThP3y5uz1G8r30tklAsdV11VNuagcCdUbFfJcYabOP+yQnb1Jg/vsxvZK43CAnPI9V9vJaZdlSjuCOvs8gp8HA/t5Tg7ELM8m4Vw5T4hUYacpcVmeZOL7a3vXnBnbWeprWLUNkr+NQVtB/c9kgedSNpXvfW3wgtBuzMNPNWyLVnryWLDi1YKOK3tNmpfteanGHzfoU5uwIedX/qA1v2Y/jdrzWtZsPXlbkrg3mfsa8YoIfg0UL6qIpuit7bC0QXBpN76S2Z1btWdObzPeaELdf9zoh0577eNxTiC0mB6Yjd9WXqCXZGL7XEA94PDfcXYzibTy8bWDQXPjPJztboAn0ymZ5ioOw5jpCNf9AL3DDuH6d8dL9BTVH9NhJ1LVSM3HBNJBqjZqqI4a+D2qPpr0b5epWVciMEVmvte1Wg6wbhusFpm77oac7FIGUGew51kCEKImANYiZxlHXFmCrAgaccs0MC5Brilc3yccuBfPYye4sI2OSvDIcOcQBw3ISamQIJGCAsWAN5/XmyqLY5MaoiTRhYio8QxxRwhygnOkggsekwA4NH8cYcm0trG1RqwNQSHrlUC8KHO1JgYkHVFAPRWOyINtrbVSxAKM4gACUWARcYMZMop4pCMDCZZab1drt/ck+N4VaSFFrahzhqcVHCJGnPuktrTEyAcclLSYkuaLdhYco+MT7C3XVDGbZhRC0s6QJNp7g8BHy0gQ3vnGN4vnbloLG8XEa8AMEBPWIy5NsQWhJcJMCx4DJ0BFG0HfrKaxXvA3771/EDgrnmo7GLzH42hB4XkSkj+yIjE8Q2SCxmWYRIeLIKctW8do92Hu/tsJ+8d7T6/ivhbYlVKCXUFKfr81k4f+YAWYy652DJ6z/LafeWg84j/vj5OUz0ax1/1xgd8izNjr27riXgF2a5uCNOqPbO9yT+Sq/PT962LOhzNOUiEeYGV609xW1xa6tXaUvEG/thMtz5D6dnbhgGcX1rP625mFxln7LffTGCurNWsr7HyoprEWS/cpYduJrXUHPA5ry9TrCk9X9nxqMXOnFOxOXNw40nHYN/XZ1vCvfLEtA+c+4OE5uHmo55nYpdx5qYRF3Or0y6eoWmPDUVSaewMkmDWpg/0Tu4se1bHTB1E57TmhKEJRqiqdQNo7QARUxI4qIiJtPltyH5a2cKBLSgvcK0RIZIjromaTcI0iwRE0xprTxjOe7SXwlSTYO2KRB6EQj0Yi4yHNL7OeMx+otI2n/1rN71KnAIpJxR6nNUyIQoYpj7DUgQbLBKUHu1WotfLrwDEGRSMCT5JMW+uQKa7nsMT7IAiNzugv8pAijlGDkw4JyUkiXCrknA2ISmBU4OCJW705a0/CWy+2J5IzsAojQ0lEvMjrW16cAItRehoISAbNF3HNTf7Rd2wM16ANQz5ygbhK1skw4hDRFiwzzkjWuMKu5r9aMMtW6GSXDdK6kGuiBEoTzhAIHaSWIanvxmmeJrxaoBUsTyobp5VrTOF6xemGDTFBeKBgpW98j/nWtkCoUJ5SigkSthBkzRVK9oggCYJR7kWUvPF1u5jLbOEMuQjMYpMW7MT74CIkMeYcBcFDCJYqZxv3Lmep1uNTayVXlEWOCDUh+VrBIOtwQC4ZZBFtEEYd+8T81PH8eF1zFy513H8D7uORD/6s2aH6uPaUzAHOxOy5IVbdd0hY77sjsrIBWHKjzg7g3vsMm6SndhboYQl6KI1x2N2FhM+3ZNfTytSoKLGSAqXfyQWmPnkPmGmkmXJYa0nimqqH/TM1H2sd22jcsHCgEmtFUBSsuIaQJWpN8pCS+0+cBK+ZaDy8a7HmkLjgDNEImE7+YArxiuI0ihST0QiiNfP1rz6oSe1c9bbg/mKLtdVFUCOLM8QxIO2URMx5GWTyf1MYcJjJLe1CC+kKp4SLUiJDigLaEBLxRgACiiVgKUzyoo7sKI2HMLisfb9Qtfc+LlMFUot+0zIe7Rwx3r8mqBCaCk3LkMaTmcom1MSsqG1pyAfaQiZqeAi15OLY3lAVqW+71BWGPyX3yEpKPU8eAgsqOQwqReCaQQpHTUhG1VIsTLMHllfF9dg2RUawyT2gKGKsEsneJY8Qa2TBMOxtMjKy8eRKuxsdnnAlrEBCJueIe8fQJNWSfEHiffKhIDSeWyk1ahtV7MSRoC2iRnrEWfIOLUtOEo7JOyKEioCPXeW8uk2/1lWYbfPv4SM8vt1+MOdgbXnpNimV3ctPywFzu3CJC36o+DS9aa5iss501bBjuxVjPPV7rcAYsMwB4hY04sUVfJZjWRwwN8xKF0Gtqpx9zEqLu06CF3upyYpIRpMJxTSmmBt75L2SEnQELxu/93VB7FsIuxO9iliLAEhxyWLAyGnMkwFlXHtgMeBms9fl832XbvEnzyC8G/R95bv7ZgjjwZJKfn+T2md3X91c2t4IBuUVGxXd/PPgajzZF1hWAEvQZ/1KkH8rYU1VUVVXnWcD8KPJX267yNeouQ2Q+5/yMj6pREJ7Qp3f0tQk0MW7mlauc3oEdrezju3d32E47o3ew6iqvSZTuTSzBQKvlua17Dl5tazrWr7zZ05ZIaRz4hLCD4rwVtLtB5Bw/SbeX5x4Vyb265XvMOjffKnS3ZywLHDp6xWVD9CbMWFh+X51QrMBg3nH2gHM+VmBbIHfO5sNlq9+rODdqfn1o+p1GcjDkVEN0rqdNZx5fDGtlaPnsqzWysShL2Pb97axPSlo5oa1wxCxvv0QOm/4TdUdRtWd25F1drjCj7rK7u0aXtb99uJ8Rw37r4Lbu446+Xjj0C3q5eGXq45n0vb0VFltEt7WyVY9XfQvzp8x8pOl+9zxf4ozcGBDPoDC5H6pkW4dqDl8utwN5+bi6MosPBcb03wkPb5J9IfH/crqDOzA6+ogXy+z3//994u3v/3jX782surfwqdid/RISaivYoJe98AOzs+aWwbPk2uLbxZ26P49TR+8OofbX+5uBjAcvihc2Be3FL8gP56Ur18WTy/4C/zjyes0aoL7MofxaGB7P568G7te5ot6qv5HyF86rQNRggeFMXBju53ZEJPxXvfscAjDYnZ+H8/51v05JMQgZnf3lKSm9+NYafodrvu3sNxx2rrc93Vywl/9mfsPNr+CkIKd4nnKiHU4dBNfbmAwylrG7QE0ur9CMtpJel6Xh6Fm4rfSXul9DsPsKv33TdaDYSmM699NPpsVf5zBB3ub9QdJKqJN853cueU33/2l2zlLaBdCZa+mYvZ/X95mH/2KAAA=" generateConnectionHelper="true" generateStoredProcedures="true" fieldNameCase="Unchanged" generateDefaultConstructors="false" generateClassesForViews="true" useNameOf="true" connectionStringName="ConnectionString" createdInVersion="20.1.4.0" generateJsonSerializationContractResolver="false" generateServiceCollectionExtensions="false" lastModifiedInVersion="20.1.4.0" name="Database" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
+  <classes>
+    <dataBaseObjectModelHasClasses Id="7fef5733-c966-46e3-9424-62bf3129b3c5">
+      <xpObject Id="633778c0-59e7-4504-8f7b-66ad517ed951" name="expense_category" baseClass="XPLiteObject" userFileName="expense_category" designerFileName="expense_category.Designer" className="expense_category" initialName="expense_category" virtualBaseClass="XPLiteObject" persistent="expense_category" virtualName="expense_category">
+        <fields>
+          <generalXpObjectHasFields Id="1f19d59d-c1eb-4e44-b5d2-69b952290827">
+            <field Id="8dde04a6-89b6-45d5-97af-6a90eece028a" name="expense_category_id" columnType="Int32" initialName="expense_category_id" key="true" isIdentity="true" displayName="Oid" persistent="expense_category_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="bb45c419-4648-4de8-a6cf-01ff3d77c463">
+            <field Id="ed9082bd-34bd-4e72-9cfa-c973dcb84d80" name="expense_category_name" initialName="expense_category_name" displayName="Maintenance Category" persistent="expense_category_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;expense_category_expense_category_name_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Maintenance Category&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="6f53d7d6-9c75-410f-b112-53a88d51b519" sourceCollectionName="expense_type_categorys" name="expense_type_categoryReferencesexpense_category" targetFieldName="expense_category_id">
+            <xpObjectMoniker Id="08012774-99d2-4bdc-9b89-a0f476fb7baa" />
+          </simpleAssociation>
+          <simpleAssociation Id="1684ef2f-d94e-49c8-bc38-4768820ffa68" sourceCollectionName="truck_expenses" name="truck_expenseReferencesexpense_category" targetFieldName="expense_category_id">
+            <xpObjectMoniker Id="24bc675a-4a8a-4c3e-8094-f784c9e1d9c7" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="3f2a3060-9e64-4bdd-b5c2-2eadf2e61a92">
+            <collectionField Id="92facd3f-5cb0-43f7-854a-007f67e47746" displayName="Expense Type Categories" name="expense_type_categorys" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="6ae1c40d-5e7d-4ab4-90d5-c6564f7a2604">
+            <collectionField Id="eff12e0f-089f-4ff3-8424-119205a41cc4" displayName="Truck Expenses" name="truck_expenses" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="5a0242ab-7888-4eb4-bff0-dcf07e6ca04e">
+      <xpObject Id="5fff970d-3cfa-45de-b2f3-32cc91dcaa1c" name="expense_type" baseClass="XPLiteObject" userFileName="expense_type" designerFileName="expense_type.Designer" className="expense_type" initialName="expense_type" virtualBaseClass="XPLiteObject" persistent="expense_type" virtualName="expense_type">
+        <fields>
+          <generalXpObjectHasFields Id="f7a1b19f-2b70-49af-baca-dcc21c275c38">
+            <field Id="50f2b46a-d68f-410c-b58a-f0fe65fca630" name="expense_type_id" columnType="Int32" initialName="expense_type_id" key="true" isIdentity="true" displayName="Oid" persistent="expense_type_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e67f90a0-6259-454b-8b14-dc2716236879">
+            <field Id="976a5aa7-23ab-4c08-8c40-37985241e7a7" name="expense_type_name" initialName="expense_type_name" displayName="Expense Type" persistent="expense_type_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;expense_type_expense_type_name_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Expense Type&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="1276702d-edb8-4e2e-b25a-913db7d480a7" sourceCollectionName="expense_type_categorys" name="expense_type_categoryReferencesexpense_type" targetFieldName="expense_type_id">
+            <xpObjectMoniker Id="08012774-99d2-4bdc-9b89-a0f476fb7baa" />
+          </simpleAssociation>
+          <simpleAssociation Id="6d6a8dda-caca-46bf-a599-bc8bc908c0a3" sourceCollectionName="truck_expenses" name="truck_expenseReferencesexpense_type" targetFieldName="expense_type_id">
+            <xpObjectMoniker Id="24bc675a-4a8a-4c3e-8094-f784c9e1d9c7" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="56bf5321-0036-428b-a98f-8c414a4fe341">
+            <collectionField Id="fc32315d-c07c-49be-8cbf-7132801f543b" displayName="Expense Type Categories" name="expense_type_categorys" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="c190dbab-127a-438f-b55a-8f3c6a026cb2">
+            <collectionField Id="67084c0e-e4c2-42b7-98a8-b77c0d4409c1" displayName="Truck Expenses" name="truck_expenses" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="fb30097b-b6d7-4939-b8a5-e9908e8dada0">
+      <xpObject Id="08012774-99d2-4bdc-9b89-a0f476fb7baa" name="expense_type_category" baseClass="XPLiteObject" userFileName="expense_type_category" designerFileName="expense_type_category.Designer" className="expense_type_category" initialName="expense_type_category" virtualBaseClass="XPLiteObject" persistent="expense_type_category" virtualName="expense_type_category">
+        <fields>
+          <generalXpObjectHasFields Id="f767f12c-97de-4eec-8c25-a624d6bcb001">
+            <field Id="e41879ef-27ab-4912-aad0-0390a00b45e4" name="expense_type_category_id" columnType="Int32" initialName="expense_type_category_id" key="true" isIdentity="true" displayName="Oid" persistent="expense_type_category_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d0105dc7-f8da-4a8e-a5df-cb552f86cc2c">
+            <field Id="b95ed24f-65ff-4755-b870-0abd1713ca4b" name="expense_type_id" columnType="Int32" initialName="expense_type_id" displayName="Expense Type" persistent="expense_type_id" virtualColumnType="expense_type" logicalType="expense_type" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;expense_type_category_expense_type_id_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Expense Type&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1436f7c5-61e8-414e-ad97-a6283b429eaa">
+            <field Id="93dcaf6d-51c7-4ef3-b396-2b0763678bcb" name="expense_category_id" columnType="Int32" initialName="expense_category_id" displayName="Maintenance Category" persistent="expense_category_id" virtualColumnType="expense_category" logicalType="expense_category" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;expense_type_category_expense_category_id_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Maintenance Category&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+        <indexes>
+          <xpObjectHasIndexes Id="fe5ebbfb-379e-47ac-8b63-37f99a719a04">
+            <index Id="9f1767b8-e102-4ed5-9d1b-affbeea6baad" name="inx_expense_type_category_uni" unique="true">
+              <fieldsInIndex>
+                <indexReferencesFields Id="27833375-3ae3-44eb-9cd9-c8a26a1b07c3">
+                  <fieldMoniker Id="b95ed24f-65ff-4755-b870-0abd1713ca4b" />
+                </indexReferencesFields>
+                <indexReferencesFields Id="6ddbb8fd-d1cd-40fd-9394-eea5238bf85e">
+                  <fieldMoniker Id="93dcaf6d-51c7-4ef3-b396-2b0763678bcb" />
+                </indexReferencesFields>
+              </fieldsInIndex>
+            </index>
+          </xpObjectHasIndexes>
+        </indexes>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="eb0123c5-7f5a-4294-9adb-9fddc8bd46b7">
+      <xpObject Id="855927b1-78a8-4826-8a2e-75b58517f99b" name="location" baseClass="XPLiteObject" userFileName="location" designerFileName="location.Designer" className="location" initialName="location" virtualBaseClass="XPLiteObject" persistent="location" virtualName="location">
+        <fields>
+          <generalXpObjectHasFields Id="117bdc8d-1289-48e0-9c66-cf4bcba8f54d">
+            <field Id="55dc6c04-3e3e-4189-a1fe-8ea4fb69e687" name="location_id" columnType="Int32" initialName="location_id" key="true" isIdentity="true" displayName="Oid" persistent="location_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="f7012e7f-b710-46fe-ab79-026dde6f2a68">
+            <field Id="36220ac0-8c56-42f8-b01c-14428e46c673" name="location_name" initialName="location_name" displayName="Location" persistent="location_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;location_location_name_id_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Location&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="736187d1-291f-4409-9d1c-885709b473f4" sourceCollectionName="trucks" name="truckReferenceslocation" targetFieldName="location_id">
+            <xpObjectMoniker Id="df81eeaa-ba34-47a1-a5d8-4a38e346e68a" />
+          </simpleAssociation>
+          <simpleAssociation Id="05612dc6-bc05-4df1-bcb7-e68f53bb935d" sourceCollectionName="truck_expenses" name="truck_expenseReferenceslocation" targetFieldName="location_id">
+            <xpObjectMoniker Id="24bc675a-4a8a-4c3e-8094-f784c9e1d9c7" />
+          </simpleAssociation>
+          <simpleAssociation Id="b57291f6-9b4e-4a56-81c2-df94736fc798" sourceCollectionName="user_locations" name="user_locationReferenceslocation" targetFieldName="location_id">
+            <xpObjectMoniker Id="a622c4c9-3d7b-479e-83e9-a9de38a20590" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="765446f1-0982-4311-bb81-f77aed68a9a1">
+            <collectionField Id="bd1ca79f-573e-4b3e-81ab-65b3abf7db6a" displayName="Trucks" name="trucks" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="f6ec7047-aac7-474f-af7f-6383a1cf6ac0">
+            <collectionField Id="022c9e3a-fd50-43e6-9598-9324bd09f797" displayName="Truck Expenses" name="truck_expenses" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="4aa6b979-c009-4f4b-ab0c-762aa2f00e32">
+            <collectionField Id="739ace04-b1ad-4b31-b963-30ca379e3c1d" displayName="User Locations" name="user_locations" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="13a1f63d-6f29-4cb2-90c8-ef63b2b04e62">
+      <xpObject Id="df9dce07-35b2-45db-8c22-7ff26692be2f" name="payment_type" baseClass="XPLiteObject" userFileName="payment_type" designerFileName="payment_type.Designer" className="payment_type" initialName="payment_type" virtualBaseClass="XPLiteObject" persistent="payment_type" virtualName="payment_type">
+        <fields>
+          <generalXpObjectHasFields Id="2187e199-b1b0-45e3-81eb-d7bdc3e03f73">
+            <field Id="745a58a2-80f7-4422-a79c-afce558f781f" name="payment_type_id" columnType="Int32" initialName="payment_type_id" key="true" isIdentity="true" displayName="Oid" persistent="payment_type_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="883ff262-b13d-4c4e-83e7-fbf3440ff31c">
+            <field Id="23e9aa48-a691-4caf-af28-691579bcdbc4" name="payment_type_name" initialName="payment_type_name" displayName="Payment Type" persistent="payment_type_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;payment_type_payment_type_name_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Payment Type&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="309c5faa-dd1f-4ad8-bb13-51f30095918a" sourceCollectionName="truck_expenses" name="truck_expenseReferencespayment_type" targetFieldName="payment_type_id">
+            <xpObjectMoniker Id="24bc675a-4a8a-4c3e-8094-f784c9e1d9c7" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="8b9d728e-4d43-412e-b626-44fee053dfc5">
+            <collectionField Id="05f3a1c7-8647-4d4f-aba5-c732863f2731" displayName="Truck Expenses" name="truck_expenses" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="15921a3f-59ff-41a7-bd2b-9ca5dcce480d">
+      <xpObject Id="df81eeaa-ba34-47a1-a5d8-4a38e346e68a" name="truck" baseClass="XPLiteObject" userFileName="truck" designerFileName="truck.Designer" className="truck" initialName="truck" virtualBaseClass="XPLiteObject" persistent="truck" virtualName="truck">
+        <fields>
+          <generalXpObjectHasFields Id="532fb89e-f198-4ac4-b89b-4999d7ecda9a">
+            <field Id="0afb26ec-94bb-4e8e-b667-51f2e7e73e4f" name="truck_id" columnType="Int32" initialName="truck_id" key="true" isIdentity="true" displayName="Oid" persistent="truck_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="b61aa859-256d-4aff-b9f1-a3c09082dc0a">
+            <field Id="df61fbdf-29c3-4b11-b544-7dbdc01de0da" name="plate" initialName="plate" displayName="Plate" persistent="plate" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_plate_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Plate&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="fdcfa0fa-7772-4f2a-b6cf-b8eb5fd66128">
+            <field Id="551aadd7-ac75-43ab-a9fd-6b17e2c25b16" name="equipment_number" initialName="equipment_number" displayName="Equipment Number" persistent="equipment_number" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_equipment_number_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Equipment Number&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="419c9679-a805-49c0-ba1a-da38a2ff681d">
+            <field Id="ee320de5-2e3f-4903-971c-8f3e6ea2acac" name="location_id" columnType="Int32" initialName="location_id" displayName="Location" persistent="location_id" virtualColumnType="location" logicalType="location" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_location_id_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Location&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="7872bf3b-af56-43d6-87e4-e69180d40657">
+            <field Id="272bb94c-9df0-44ca-b860-cd0d76a021e4" name="truck_type" initialName="truck_type" displayName="Truck Type" persistent="truck_type" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_truck_type_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Truck Type&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3ac123cc-406a-4e4d-ab2f-f75d296e142d">
+            <field Id="ca48273a-8fed-47eb-acc9-ecfa31d5cbc7" name="truck_model" initialName="truck_model" displayName="Truck Model" persistent="truck_model" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_truck_model_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Truck Model&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d4fe41c4-175c-4ac8-99e3-dbb85ef182d5">
+            <field Id="31c8e03e-35ac-469f-af86-03854fd41e25" name="truck_box" initialName="truck_box" displayName="Truck Box" persistent="truck_box" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_truck_box_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Truck Box&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+        <indexes>
+          <xpObjectHasIndexes Id="9b8a7f72-278a-43ae-85d9-2892d3a05931">
+            <index Id="2ad02e61-b3d2-4cd0-a02c-b3f32cf28819" name="inx_truck_plate_uni" unique="true">
+              <fieldsInIndex>
+                <indexReferencesFields Id="dcc62a3e-5469-4aec-9bcc-be925564f809">
+                  <fieldMoniker Id="df61fbdf-29c3-4b11-b544-7dbdc01de0da" />
+                </indexReferencesFields>
+              </fieldsInIndex>
+            </index>
+          </xpObjectHasIndexes>
+        </indexes>
+        <saTargets>
+          <simpleAssociation Id="114b1b6b-5f3f-445b-b289-3e8d3fae75e8" sourceCollectionName="truck_expenses" name="truck_expenseReferencestruck" targetFieldName="truck_id">
+            <xpObjectMoniker Id="24bc675a-4a8a-4c3e-8094-f784c9e1d9c7" />
+          </simpleAssociation>
+          <simpleAssociation Id="50330305-2d77-47bf-b860-746071ac4b24" sourceCollectionName="truck_kms" name="truck_kmReferencestruck" targetFieldName="truck_id">
+            <xpObjectMoniker Id="27f60765-607f-42c0-b038-837b08861f25" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="36c0144f-0cdc-4b64-bcf5-33edc2a6d4f8">
+            <collectionField Id="2df95dc8-9053-4afc-b3f7-194eab60b0fc" displayName="Truck Expenses" name="truck_expenses" />
+          </xpObjectHasCollectionFields>
+          <xpObjectHasCollectionFields Id="892c31d6-7bf9-4b19-b4c2-f6a1e76e2b47">
+            <collectionField Id="df471215-e01c-41ec-92ab-7e1ccc1b1aba" displayName="Truck KMs" name="truck_kms" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="068bfffc-980b-44ca-acc1-388bedb01d94">
+      <xpObject Id="24bc675a-4a8a-4c3e-8094-f784c9e1d9c7" name="truck_expense" baseClass="XPLiteObject" userFileName="truck_expense" designerFileName="truck_expense.Designer" className="truck_expense" initialName="truck_expense" virtualBaseClass="XPLiteObject" persistent="truck_expense" virtualName="truck_expense">
+        <fields>
+          <generalXpObjectHasFields Id="45ffc8b2-61d4-407e-9209-77098b0aa08b">
+            <field Id="f7b8c412-feb2-46b5-8cbe-1e7f0b2715f2" name="truck_expense_id" columnType="Int32" initialName="truck_expense_id" key="true" isIdentity="true" displayName="Oid" persistent="truck_expense_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="a3ac756b-24ce-48d8-a2bf-b1de86403a99">
+            <field Id="b66ae4c7-11f3-48af-a148-f10fe8008426" name="trk_exp_date" columnType="DateTime" initialName="trk_exp_date" displayName="Date" persistent="trk_exp_date" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_expense_trk_exp_date_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Date&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="da6d4c2c-faf4-4079-863c-c2627b09f966">
+            <field Id="7610cb1a-ce57-4f96-9cee-13ac43cd26a4" name="truck_id" columnType="Int32" initialName="truck_id" displayName="Truck" persistent="truck_id" virtualColumnType="truck" logicalType="truck" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_expense_truck_id_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Truck&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="0c8a3d0a-1957-4885-8782-7a90c06be9c4">
+            <field Id="2b7ee8af-0c0a-4117-937c-068d2da3522a" name="location_id" columnType="Int32" initialName="location_id" displayName="Location" persistent="location_id" virtualColumnType="location" logicalType="location" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_expense_location_id_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Location&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d31c00d0-621d-4a96-81d2-8c70b25902fd">
+            <field Id="d400e72f-ec13-4aab-958a-a1ccd512fb98" name="expense_type_id" columnType="Int32" initialName="expense_type_id" displayName="Expense Type" persistent="expense_type_id" virtualColumnType="expense_type" logicalType="expense_type" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_expense_expense_type_id_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Expense Type&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3b76f5bc-68a6-47da-bc2a-d3cf40ac8fe5">
+            <field Id="0ff8eb6b-5641-4a67-bbad-26e3250dc1b1" name="expense_category_id" columnType="Int32" initialName="expense_category_id" displayName="Maintenance Category" persistent="expense_category_id" virtualColumnType="expense_category" logicalType="expense_category" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_expense_expense_category_id_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Maintenance Category&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="63e842d4-e0bc-471a-8be4-4873f3f8c99d">
+            <field Id="1643ea70-921f-4df0-a426-8ff6c2d1e63e" name="payment_type_id" columnType="Int32" initialName="payment_type_id" displayName="Payment Type" persistent="payment_type_id" virtualColumnType="payment_type" logicalType="payment_type" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_expense_payment_type_id_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Payment Type&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="05a1e2a9-3ed9-46ef-97d1-a21f1370c744">
+            <field Id="e948e893-cf45-47be-931b-18aea39b9636" name="vendor_id" columnType="Int64" initialName="vendor_id" displayName="Vendor" persistent="vendor_id" virtualColumnType="vendor" logicalType="vendor" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1f53e485-adc9-45dd-984a-a76c1d7ecbaa">
+            <field Id="fa588c49-8841-4175-a703-e58d686d13a6" name="invoice_number" initialName="invoice_number" displayName="Invoice Number" persistent="invoice_number" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="f7677430-df8f-4fac-999f-f66edf7452d9">
+            <field Id="fea4ee80-bb99-4a8f-acc9-19d5ce2ea6cf" name="amount" columnType="Double" initialName="amount" displayName="Amount" persistent="amount" virtualColumnType="Double" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_expense_amount_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Amount&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="eb0445c2-39c6-4814-8ab6-54ea6453d221">
+            <field Id="57c22201-5a45-4847-a351-6e5324c5f64e" name="vat" columnType="Double" initialName="vat" displayName="VAT" persistent="vat" virtualColumnType="Double" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="91d66335-8ca9-4c2a-a6c1-a1302b2b1baf">
+            <field Id="95d3a09e-9e57-445d-a744-d54ddda27ba2" name="total_amount" columnType="Double" initialName="total_amount" displayName="Total Amount" persistent="total_amount" virtualColumnType="Double" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_expense_total_amount_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Total Amount&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="dd6c2a1b-290c-4385-b0b2-1e87b168414a">
+            <field Id="a64723f4-129d-4fd9-ab0d-b4aa5fad597b" name="comments" initialName="comments" displayName="Comments" persistent="comments" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="f2ca06bf-e0d3-416f-934b-1c22f8795c96">
+      <xpObject Id="27f60765-607f-42c0-b038-837b08861f25" name="truck_km" baseClass="XPLiteObject" userFileName="truck_km" designerFileName="truck_km.Designer" className="truck_km" initialName="truck_km" virtualBaseClass="XPLiteObject" persistent="truck_km" virtualName="truck_km">
+        <fields>
+          <generalXpObjectHasFields Id="b5afe3d5-9960-4877-af44-4ca7924a8c8b">
+            <field Id="4e260871-f53b-4c30-b9c9-21f1b6ec8358" name="truck_km_id" columnType="Int32" initialName="truck_km_id" key="true" displayName="Oid" persistent="truck_km_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="42405b96-adeb-4150-be34-954fe1b14291">
+            <field Id="01bdb918-e389-40ff-ac72-736f951883c3" name="truck_id" columnType="Int32" initialName="truck_id" displayName="Truck" persistent="truck_id" virtualColumnType="truck" logicalType="truck" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_km_truck_id_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Truck&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="6c430b89-523a-460e-83b1-2deac0e7a0fa">
+            <field Id="f0a08a8e-9361-4cfd-8b76-3bc6d6e2ec49" name="km_amount" columnType="Double" initialName="km_amount" displayName="KM amount" persistent="km_amount" virtualColumnType="Double" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_km_km_amount_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter KM amount&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1f755d3f-3752-4a73-9405-632e07dffeb3">
+            <field Id="db75bf66-9134-4dde-995e-e206e065923f" name="truck_km_date" columnType="DateTime" initialName="truck_km_date" displayName="Date" persistent="truck_km_date" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;truck_km_truck_km_date_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Date&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="779498f4-4427-40b4-984a-178c58eb24a9">
+      <xpObject Id="a622c4c9-3d7b-479e-83e9-a9de38a20590" name="user_location" baseClass="XPLiteObject" userFileName="user_location" designerFileName="user_location.Designer" className="user_location" initialName="user_location" virtualBaseClass="XPLiteObject" persistent="user_location" virtualName="user_location">
+        <fields>
+          <generalXpObjectHasFields Id="8a701fa0-d465-4eeb-abb0-4fcdd0f09e71">
+            <field Id="6feaf952-f007-47cb-b008-ae930ca4dd6e" name="user_location_id" columnType="Int32" initialName="user_location_id" key="true" isIdentity="true" displayName="Oid" persistent="user_location_id" virtualColumnType="Int32" memberDesignTimeVisibility="false" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="cad4c2f8-df1e-475b-ae01-13c7adb32057">
+            <field Id="2c1475a5-5672-4cb3-a09e-3581cc1bded2" name="location_id" columnType="Int32" initialName="location_id" displayName="Location" persistent="location_id" virtualColumnType="location" logicalType="location" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;user_location_location_id_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Location&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="b32bac17-2fb4-4f26-a7f2-ff37a37e8034">
+            <field Id="271b1d8a-296c-4318-a376-0fc491125d05" name="user_id" columnType="Guid" initialName="user_id" displayName="User" persistent="user_id" virtualColumnType="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" logicalType="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;user_location_user_id_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter User&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="d1b6b067-c643-4fb3-9306-e2bd01efd8ff">
+      <xpObject Id="e99ea3be-4ae8-41fe-a406-00093a6bfe72" name="vendor" baseClass="XPLiteObject" userFileName="vendor" designerFileName="vendor.Designer" className="vendor" initialName="vendor" virtualBaseClass="XPLiteObject" persistent="vendor" virtualName="vendor">
+        <fields>
+          <generalXpObjectHasFields Id="49c4e53d-3823-4593-ba89-5f38a8fc4088">
+            <field Id="54ec13cb-632b-402f-b90c-cc766e8fec6b" name="vendor_id" columnType="Int64" initialName="vendor_id" key="true" displayName="Vendor Number" persistent="vendor_id" virtualColumnType="Int64" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;vendor_vendor_id_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Vendor Number&quot;)" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="010614f4-3e79-4027-a6f5-ea586aed45d3">
+            <field Id="0ec171aa-ee1e-41d0-b804-ae348ce3fd0b" name="vendor_name" initialName="vendor_name" displayName="Vendor Name" persistent="vendor_name" virtualColumnType="String" delayedUpdateModifiedOnly="false" customAttributes="DevExpress.Persistent.Validation.RuleRequiredField(&quot;vendor_vendor_name_req&quot;, DevExpress.Persistent.Validation.DefaultContexts.Save, &quot;You must enter Vendor Name&quot;)" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="931620d0-347e-48d1-a3fb-844aa12a42b9" sourceCollectionName="truck_expenses" name="truck_expenseReferencesvendor" targetFieldName="vendor_id">
+            <xpObjectMoniker Id="24bc675a-4a8a-4c3e-8094-f784c9e1d9c7" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="5d09c8c2-b2fb-4740-9e3f-d90f1a781afa">
+            <collectionField Id="305a0439-ed2f-49e1-a963-4bf1f384be67" displayName="Truck Expenses" name="truck_expenses" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+  </classes>
+  <externalTypes>
+    <dataBaseObjectModelHasExternalTypes Id="b5335c8e-764b-4464-8c69-46f761802bd8">
+      <externalType Id="7af665e9-db7c-42bb-a047-157ffe3a946e" name="PermissionPolicyUser" namespace="DevExpress.Persistent.BaseImpl.PermissionPolicy" />
+    </dataBaseObjectModelHasExternalTypes>
+  </externalTypes>
+</dataBaseObjectModel>
