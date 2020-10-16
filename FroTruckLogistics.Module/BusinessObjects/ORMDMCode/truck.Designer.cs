@@ -82,6 +82,15 @@ namespace FroTruckLogistics.Module.BO
             get { return ftruck_box; }
             set { SetPropertyValue<string>(nameof(truck_box), ref ftruck_box, value); }
         }
+        string fname_on_sys;
+        [Indexed(Name = @"inx_truck_namesys_uni", Unique = true)]
+        [DevExpress.Xpo.DisplayName(@"Name on system")]
+        [DevExpress.Persistent.Validation.RuleRequiredField("truck_name_on_sys_req", DevExpress.Persistent.Validation.DefaultContexts.Save, "You must enter Name on system")]
+        public string name_on_sys
+        {
+            get { return fname_on_sys; }
+            set { SetPropertyValue<string>(nameof(name_on_sys), ref fname_on_sys, value); }
+        }
         [DevExpress.Xpo.DisplayName(@"Truck Expenses")]
         [Association(@"truck_expenseReferencestruck")]
         public XPCollection<truck_expense> truck_expenses { get { return GetCollection<truck_expense>(nameof(truck_expenses)); } }

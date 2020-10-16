@@ -37,6 +37,7 @@ namespace FroTruckLogistics.Module.BO
             set { SetPropertyValue<location>(nameof(location_id), ref flocation_id, value); }
         }
         DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser fuser_id;
+        [Indexed(Name = @"iuser_id_user_location")]
         [DevExpress.Xpo.DisplayName(@"User")]
         [DevExpress.Persistent.Validation.RuleRequiredField("user_location_user_id_req", DevExpress.Persistent.Validation.DefaultContexts.Save, "You must enter User")]
         public DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser user_id
