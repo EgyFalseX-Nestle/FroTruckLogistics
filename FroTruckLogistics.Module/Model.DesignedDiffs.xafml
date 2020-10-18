@@ -10,13 +10,15 @@
     <Class Name="FroTruckLogistics.Module.BO.truck_expense" IsCloneable="True" DefaultDetailViewImage="BO_Invoice" DefaultListViewImage="BO_Invoice" ImageName="BO_Invoice">
       <OwnMembers>
         <Member Name="amount" ImmediatePostData="True" />
-        <Member Name="expense_category_id" DataSourceCriteria="[expense_type_categorys][[expense_type_id.expense_type_id] = '@This.expense_type_id.expense_type_id']" />
-        <Member Name="expense_type_id" ImmediatePostData="True" />
-        <Member Name="location_id" AllowEdit="False" />
+        <Member Name="comments" RowCount="2" />
+        <Member Name="expense_category_id" DataSourceCriteria="[expense_type_categorys][[expense_type_id.expense_type_id] = '@This.expense_type_id.expense_type_id']" LookupEditorMode="AllItems" />
+        <Member Name="expense_type_id" ImmediatePostData="True" LookupEditorMode="AllItems" />
+        <Member Name="location_id" AllowEdit="False" LookupEditorMode="AllItems" />
         <Member Name="payment_type_id" ImmediatePostData="True" />
         <Member Name="total_amount" AllowEdit="False" />
-        <Member Name="truck_id" ImmediatePostData="True" DataSourceCriteria="[location_id.user_locations][[user_id.Oid] = CurrentUserId()]" />
+        <Member Name="truck_id" ImmediatePostData="True" DataSourceCriteria="[location_id.user_locations][[user_id.Oid] = CurrentUserId()]" LookupEditorMode="AllItems" />
         <Member Name="vat" ImmediatePostData="True" />
+        <Member Name="vendor_id" LookupEditorMode="AllItems" />
       </OwnMembers>
     </Class>
     <Class Name="FroTruckLogistics.Module.BO.truck_km" IsCloneable="True" DefaultDetailViewImage="GaugeStyleThreeForthCircular_16x16" DefaultListViewImage="GaugeStyleThreeForthCircular_16x16" ImageName="GaugeStyleThreeForthCircular_16x16">
@@ -25,7 +27,11 @@
       </OwnMembers>
     </Class>
     <Class Name="FroTruckLogistics.Module.BO.user_location" DefaultDetailViewImage="BO_MyDetails" DefaultListViewImage="BO_MyDetails" ImageName="BO_MyDetails" />
-    <Class Name="FroTruckLogistics.Module.BO.vendor" DefaultDetailViewImage="BO_Contact" DefaultListViewImage="BO_Contact" ImageName="BO_Contact" />
+    <Class Name="FroTruckLogistics.Module.BO.vendor" DefaultDetailViewImage="BO_Contact" DefaultListViewImage="BO_Contact" ImageName="BO_Contact">
+      <OwnMembers>
+        <Member Name="vendor_id" EditMask="" DisplayFormat="" />
+      </OwnMembers>
+    </Class>
   </BOModel>
   <NavigationItems DefaultLeafImageName="BO_Document" StartupNavigationItem="" DefaultParentImageName="Action_PopupWindowShowAction">
     <Items>
@@ -163,7 +169,6 @@
                 <LayoutItem Id="location_id" RelativeSize="36.363636363636367" />
               </LayoutGroup>
               <LayoutGroup Id="truck_col2" RelativeSize="50">
-                <LayoutItem Id="truck_type" RelativeSize="36.363636363636367" />
                 <LayoutItem Id="truck_model" RelativeSize="27.272727272727273" />
                 <LayoutItem Id="truck_box" RelativeSize="36.363636363636367" />
               </LayoutGroup>
@@ -184,36 +189,36 @@
     <DetailView Id="truck_expense_DetailView">
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="26.235294117647058">
-            <LayoutGroup Id="truck_expense" Caption="Truck Expense" RelativeSize="100">
-              <LayoutGroup Id="truck_expense_col1" RelativeSize="49.957081545064376">
-                <LayoutItem Id="trk_exp_date" RelativeSize="17.391304347826086" />
-                <LayoutItem Id="truck_id" RelativeSize="13.043478260869565" />
-                <LayoutItem Id="expense_type_id" RelativeSize="13.043478260869565" Index="2" />
-                <LayoutItem Id="expense_category_id" RelativeSize="13.043478260869565" Index="3" />
-                <LayoutItem Id="amount" ViewItem="amount" Index="4" RelativeSize="13.043478260869565" IsNewNode="True" />
-                <LayoutItem Id="vat" ViewItem="vat" Index="5" RelativeSize="13.043478260869565" IsNewNode="True" />
-                <LayoutItem Id="comments" ViewItem="comments" Index="6" RelativeSize="17.391304347826086" IsNewNode="True" />
+          <LayoutGroup Id="SimpleEditors" RelativeSize="44.526901669758814">
+            <LayoutGroup Id="truck_expense" Caption="Truck Expense" RelativeSize="87.5">
+              <LayoutGroup Id="truck_expense_col1" RelativeSize="49.839743589743591">
+                <LayoutItem Id="trk_exp_date" RelativeSize="18.07909604519774" />
+                <LayoutItem Id="truck_id" RelativeSize="13.559322033898305" />
+                <LayoutItem Id="expense_type_id" RelativeSize="13.559322033898305" Index="2" />
+                <LayoutItem Id="expense_category_id" RelativeSize="13.559322033898305" Index="3" />
+                <LayoutItem Id="amount" ViewItem="amount" Index="4" RelativeSize="13.559322033898305" IsNewNode="True" />
+                <LayoutItem Id="vat" ViewItem="vat" Index="5" RelativeSize="27.683615819209038" IsNewNode="True" />
                 <LayoutItem Id="payment_type_id" RelativeSize="15.384615384615385" Index="7" Removed="True" />
                 <LayoutItem Id="location_id" RelativeSize="13.043478260869565" Removed="True" />
               </LayoutGroup>
-              <LayoutGroup Id="truck_expense_col2" RelativeSize="50.042918454935624">
-                <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="65.760869565217391" Caption="Invoice info" IsNewNode="True">
+              <LayoutGroup Id="truck_expense_col2" RelativeSize="50.160256410256409">
+                <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="68.361581920903959" Caption="Invoice info" IsNewNode="True">
                   <LayoutItem Id="payment_type_id" ViewItem="payment_type_id" Index="0" RelativeSize="36.363636363636367" IsNewNode="True" />
                   <LayoutItem Id="vendor_id" ViewItem="vendor_id" Index="1" RelativeSize="27.272727272727273" IsNewNode="True" />
                   <LayoutItem Id="invoice_number" ViewItem="invoice_number" Index="2" RelativeSize="36.363636363636367" IsNewNode="True" />
                 </LayoutGroup>
                 <LayoutItem Id="comments" RelativeSize="11.940298507462687" Index="1" Removed="True" />
-                <LayoutItem Id="location_id" ViewItem="location_id" Index="1" RelativeSize="13.043478260869565" IsNewNode="True" />
+                <LayoutItem Id="location_id" ViewItem="location_id" Index="1" RelativeSize="13.559322033898305" IsNewNode="True" />
                 <LayoutItem Id="vendor_id" RelativeSize="15" Index="1" Removed="True" />
                 <LayoutItem Id="invoice_number" RelativeSize="15" Index="2" Removed="True" />
-                <LayoutItem Id="total_amount" RelativeSize="21.195652173913043" Index="2" />
+                <LayoutItem Id="total_amount" RelativeSize="18.07909604519774" Index="2" />
                 <LayoutItem Id="vat" RelativeSize="13.043478260869565" Index="2" Removed="True" />
                 <LayoutItem Id="amount" RelativeSize="15" Removed="True" />
               </LayoutGroup>
             </LayoutGroup>
+            <LayoutItem Id="comments" ViewItem="comments" Index="1" RelativeSize="12.5" IsNewNode="True" />
           </LayoutGroup>
-          <LayoutGroup Id="AuditTrail_Group" Direction="Vertical" RelativeSize="73.764705882352942">
+          <LayoutGroup Id="AuditTrail_Group" Direction="Vertical" RelativeSize="55.473098330241186">
             <LayoutItem Id="AuditTrail" RelativeSize="100" />
           </LayoutGroup>
         </LayoutGroup>
